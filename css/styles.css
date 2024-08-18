@@ -476,6 +476,10 @@ button {
   height: 24px;
 }
 .footer-cont-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .subscribe-text {
   font-weight: 500;
@@ -484,6 +488,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #fff;
 margin-bottom: 16px;
+align-self: flex-start;
 }
 .footer-form {
   display: flex;
