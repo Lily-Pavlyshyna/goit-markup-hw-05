@@ -490,12 +490,13 @@ color: #fff;
 margin-bottom: 16px;
 align-self: flex-start;
 }
-.footer-form {
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
+
 .subscribe-label {
 }
 .subscribe-input {
