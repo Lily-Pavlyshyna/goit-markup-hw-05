@@ -622,8 +622,7 @@ border: none;
 .form-wrapper-cont {
   margin-bottom: 8px;
 }
-.modal-form-label,
-.modal-form-label-comment {
+.modal-form-label {
   color: #8e8f99;
   font-size: 12px;
   font-weight: 400;
