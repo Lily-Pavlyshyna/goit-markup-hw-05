@@ -562,10 +562,8 @@ border: none;
   background-color: rgba(46, 47, 66, 0.4);
   visibility: hidden;
   opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    pointer-events 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .backdrop.is-open {
   opacity: 1;
@@ -584,14 +582,19 @@ border: none;
   width: 408px;
   min-height: 584px;
   padding: 72px 24px 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  padding: 0;
   top: 24px;
   right: 24px;
   background-color: #e7e9fc;
-  border: 1px solid #8e8f99;
   border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   width: 24px;
   height: 24px;
   fill: #2e2f42;
@@ -599,9 +602,10 @@ border: none;
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover,
-.modal-close-btn:after {
+.modal-close-btn:focus {
   fill: #fff;
   background-color: #404bbf;
+  border: none;
 }
 .close-icon {
   color: transparent;
