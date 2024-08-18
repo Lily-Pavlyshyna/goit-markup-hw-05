@@ -701,8 +701,9 @@ outline: transparent;
 
 
 .checkbox:checked + .custom-label-user-checkbox > .custom-checkbox {
-border-color: transparent;
-background-color: #4d5ae5;
+background-color: #404bbf;
+border: none;
+fill: #F4F4FD;
 }
 
 .custom-label-user-checkbox {
@@ -731,6 +732,7 @@ color: #4d5ae5;
   justify-content: center;
   align-items: center;
   margin-right: 8px;
+  fill: transparent;
 } 
 .btn-submit {
   border-radius: 4px;
@@ -747,5 +749,6 @@ color: #fff;
 border: none;
 margin: 0 auto;
 display: block;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 /* #endregion modal */
